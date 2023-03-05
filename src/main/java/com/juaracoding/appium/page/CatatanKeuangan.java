@@ -21,7 +21,7 @@ public class CatatanKeuangan {
     private MobileElement btnTambahtransaksi;
     @AndroidFindBy (id = "com.chad.financialrecord:id/spCategory")
     private MobileElement listKategori;
-    @AndroidFindBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.TextView")
+    @AndroidFindBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.LinearLayout/android.widget.TextView")
     private MobileElement pendidikan;
     @AndroidFindBy(id = "com.chad.financialrecord:id/etAmount")
     private MobileElement btnJumah;
@@ -45,7 +45,7 @@ public class CatatanKeuangan {
     public void tambahPengeluaran(){
         btnTambahtransaksi.click();
         listKategori.click();
-        delay(2);
+        delay(1);
         pendidikan.click();
         btnJumah.sendKeys("5000000");
         btnKetereangan.sendKeys("Bootcam");

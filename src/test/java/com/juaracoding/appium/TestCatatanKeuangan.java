@@ -37,13 +37,13 @@ public class TestCatatanKeuangan {
         catatanKeuangan = new CatatanKeuangan(driver);
     }
 
-    @Test
+    @Test(priority = 1)
     public void testinputPengeluaran(){
         catatanKeuangan.tambahPengeluaran();
         System.out.println("Hasil = "+catatanKeuangan.getTxtResult2());
         Assert.assertEquals(catatanKeuangan.getTxtResult2(),"5.000.000");
     }
-    @Test
+    @Test(priority = 2)
     public void testinputPemasukan(){
         catatanKeuangan.tambahPemasukan();
         System.out.println("Hasil = "+catatanKeuangan.getTxtResult1());
